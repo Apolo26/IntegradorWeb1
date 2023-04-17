@@ -18,6 +18,9 @@ En la sección de "Conocenos", se muestra información sobre la historia de la h
 Por último, en la sección de "Contactanos", hay un formulario de contacto para que los clientes puedan comunicarse con la heladería directamente.
 
 La pagina actualmente no cuenta con diseño responsivo por lo cual al quererla redimensionar se va a "romper" la misma.
+
+La pagina está creada unicamente en HTML, CSS y Js.
+
 ## Captura
 
 ![App Screenshot](https://i.ibb.co/8MczFR4/image.png)
