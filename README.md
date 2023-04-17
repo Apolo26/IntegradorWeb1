@@ -21,6 +21,9 @@ La pagina actualmente no cuenta con diseño responsivo por lo cual al quererla r
 
 La pagina está creada unicamente en HTML, CSS y Js.
 
+
+⚒️ Actualmente la pagina sigue en construccion ⚒️
+
 ## Captura
 
 ![App Screenshot](https://i.ibb.co/8MczFR4/image.png)
