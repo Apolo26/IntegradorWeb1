@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../imagenes/favicon2.png">
+  <link rel="stylesheet" href="galeria.css">
+  <title>Ustedes - Planeta Helado</title>
+</head>
+
+<body>
+
+  <!--SVG CURVO-->
+
+  <section>
+    <div class="div-curvo">
+      <h1>&#10024; USTEDES &#10024;</h1>
+
+      <svg viewBox="0 0 1440 250">
+        <path fill="#fff" fill-opacity="1"
+          d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+
+      </svg>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br>
+
+  <!--HEADER Y NAVBAR-->
+
+  <header>
+    <a href="../index.html" class="logo">
+      <img src="../imagenes/favicon2.png" alt="">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="../conocenos/conocenos.html">CONOCENOS</a></li>
+        <li><a href="../contacto/contacto.html" target="_blank">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Introduccion -->
+  <br><br>
+
+  <section class="ustedes">
+    <article>
+      <p>En <strong>Planeta Helado</strong> , nuestros clientes son la razón por la cual existimos, <br> y nos encanta ver
+        cómo disfrutan de
+        nuestros helados temáticos y se sumergen en la aventura espacial junto con nuestra mascota Astro. <br> ¡Acá les
+        presentamos una selección de fotos enviadas por nuestros clientes, que muestran cómo han vivido la experiencia
+        Planeta Helado! Desde los sabores más dulces hasta los más atrevidos, ¡nuestra galaxia de helados tiene algo
+        para todos!
+        <br>
+        &#128640;
+      </p>
+    </article>
+  </section>
+
+
+  <!--FOTOS CARRUSEL-->
+
+  <section class="fotos">
+    <h2><a name="irFotos"></a></h2>
+
+
+    <div class="container">
+      <div class="misDiapositivas">
+        <img src="../imagenes/redes/Sin título-22.png" alt="imagen-1">
+      </div>
+      <div class="misDiapositivas">
+        <img src="../imagenes/redes/Sin título-23.png" alt="imagen-2">
+      </div>
+      <div class="misDiapositivas">
+        <img src="../imagenes/redes/Sin título-24.png" alt="imagen-3">
+      </div>
+      <div class="misDiapositivas">
+        <img src="../imagenes/redes/Sin título-25.png" alt="imagen-4">
+      </div>
+      <div class="misDiapositivas">
+        <img src="../imagenes/redes/Sin título-26.png" alt="imagen-5">
+      </div>
+
+      <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="elementos">
+        <span class="quadrate" onclick="diapositivaActual(1)"></span>
+        <span class="quadrate" onclick="diapositivaActual(2)"></span>
+        <span class="quadrate" onclick="diapositivaActual(3)"></span>
+        <span class="quadrate" onclick="diapositivaActual(4)"></span>
+        <span class="quadrate" onclick="diapositivaActual(5)"></span>
+      </div>
+  </section>
+
+
+  <br><br><br>
+</body>
+<script src="galeria.js"></script>
+
+</html>
