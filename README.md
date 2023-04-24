@@ -26,7 +26,7 @@ La pagina está creada unicamente en HTML, CSS y Js.
 
 24/04/2023 
 
-Aún no le implemente la sección "CONTACTO" y la página no es completamente responsiva.
+La sección "CONTACTO" tiene problemas de linkeos y la página no es completamente responsiva.
 
 
 ## ⚒️ Actualmente la pagina sigue en construccion ⚒️
