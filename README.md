@@ -22,8 +22,14 @@ La pagina actualmente no cuenta con diseño responsivo por lo cual al quererla r
 La pagina está creada unicamente en HTML, CSS y Js.
 
 
-⚒️ Actualmente la pagina sigue en construccion ⚒️
+## ❗CHANGELOG❗
 
+24/04/2023 
+
+La sección "CONTACTO" tiene problemas de linkeos y la página no es completamente responsiva.
+
+
+## ⚒️ Actualmente la pagina sigue en construccion ⚒️
 ## Captura
 
 ![App Screenshot](https://i.ibb.co/8MczFR4/image.png)
