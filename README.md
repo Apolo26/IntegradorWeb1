@@ -31,8 +31,8 @@ La sección "CONTACTO" tiene problemas de linkeos y la página no es completamen
 25/05/2023
 
 En la seccion "Contacto" se le agregó "Preguntas Frecuentes"
-Tambien se le arregló el problema de linkeos mencionados en el anterior changelog.                  ☑
-Aun no contiene formulario de contacto
+Tambien se le arregló el problema de linkeos mencionados en el anterior changelog.
+Aun no contiene formulario de contacto                                                              ☑
 
 ## ⚒️ Actualmente la pagina sigue en construccion ⚒️
 ## Captura
