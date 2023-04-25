@@ -44,7 +44,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Seccion Header \ Navbar */
+/* Seccion Header-Navbar */
 
 header {
   position: fixed;
@@ -137,18 +137,17 @@ header.abajo ul li a {
   white-space: nowrap;
 }
 
+/* Seccion Preguntas Frecuentes */
 
-/* Seccion Contacto */
-
-
-.contacto {
+.preguntas-frecuentes {
+  padding-top: 100px;
   margin: 0 5rem 0rem 5rem;
   font-size: 1rem;
   text-align: center;
   justify-content: center;
 }
 
-.contacto h1 .magico {
+.preguntas-frecuentes h1 .magico {
 
   animation: background-pan 3s linear infinite;
   background: linear-gradient(
@@ -160,7 +159,115 @@ header.abajo ul li a {
   );
   background-size: 200%;
   -webkit-background-clip: text;
+  background-clip: none;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
   font-size: 3rem;
+}
+
+
+.acordeon {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  margin: auto;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 9px;
+  box-shadow: 0 0 4px rgba(0, 0 , 0, 0.2 );
+}
+
+.acordeon .contenido-acordeon {
+  margin: 10px 0px;
+  border-radius: 4px;
+  background: #fff7f0;
+  border: 1px solid #ffd6b3;
+  overflow: hidden;
+}
+
+.acordeon .contenido-acordeon:nth-child(2){
+  background-color: #F0FAFF;
+  border-color: #CCEEFF;
+}
+
+.acordeon .contenido-acordeon:nth-child(3){
+  background-color: #FFF0F3;
+  border-color: #FFCCD6;
+}
+
+.acordeon .contenido-acordeon:nth-child(4){
+  background-color: #F0F0FF;
+  border-color: #CCCCFF;
+}
+
+.acordeon .contenido-acordeon:nth-child(5){
+  background-color: #f3fff0;
+  border-color: #d5ffcc;
+}
+
+.acordeon .contenido-acordeon.abierto {
+  padding-bottom: 10px;
+}
+
+.acordeon .contenido-acordeon .encabezado {  
+  display: flex;
+  min-height: 50px;
+  padding: 0 25px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+
+.acordeon .contenido-acordeon.abierto .encabezado {
+  min-height: 35px;
+}
+
+.acordeon .contenido-acordeon .encabezado .titulo {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.acordeon .contenido-acordeon .encabezado i {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.acordeon .contenido-acordeon .descripcion {
+  height: 0;
+  padding: 0 15px;
+  color: #333;
+  font-weight: 400;
+  transition: all 0.2s linear;
+}
+
+
+/* Seccion Formulario */
+
+.contactanos {
+  padding-top: 100px;
+  margin: 0 5rem 0rem 5rem;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.contactanos h1 .magico {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  font-size: 3rem;
+
 }
