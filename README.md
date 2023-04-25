@@ -26,8 +26,13 @@ La pagina está creada unicamente en HTML, CSS y Js.
 
 24/04/2023 
 
-La sección "CONTACTO" tiene problemas de linkeos y la página no es completamente responsiva.
+La sección "CONTACTO" tiene problemas de linkeos y la página no es completamente responsiva.        ☑
 
+25/05/2023
+
+En la seccion "Contacto" se le agregó "Preguntas Frecuentes"
+Tambien se le arregló el problema de linkeos mencionados en el anterior changelog.                  ☑
+Aun no contiene formulario de contacto
 
 ## ⚒️ Actualmente la pagina sigue en construccion ⚒️
 ## Captura
