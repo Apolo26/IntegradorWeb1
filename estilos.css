@@ -24,8 +24,11 @@ body {
   --purple: rgb(123, 31, 162);
   --violet: rgb(103, 58, 183);
   --pink: rgb(244, 143, 177);
-  --yellow: rgb(255, 243, 106);
+  --yellow: #fffd6d;
   --white: rgb(255, 255, 255);
+  --turquoise: #25ceea;
+  --brown: #fee076;
+  --dark-brown: #f7a51b;
 }
 
 /* Animacion de paneo en texto "magico" */
@@ -65,7 +68,6 @@ header .logo img {
   max-width: 100px;
   min-width: 100px;
   align-items: flex-start;
-  color: #ffafcc;
 }
 
 /* Navbar */
@@ -98,6 +100,7 @@ header ul li a {
   transition: 0.3s;
 }
 
+
 header.abajo .logo,
 header.abajo ul li a {
   color: #bb5c04;
@@ -123,12 +126,19 @@ header.abajo ul li a {
 }
 
 .inicio .contenido h1 {
-  color: #f6a70b;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 3.2em;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+  font-size: 3.2rem;  
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--brown),
+    var(--white),
+    var(--white),
+    var(--brown)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .inicio .contenido p {
@@ -137,6 +147,18 @@ header.abajo ul li a {
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 800;
+  color:#fefefe;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .botonSabores {
@@ -144,7 +166,8 @@ header.abajo ul li a {
 }
 
 .inicio .contenido a {
-  background-color: #bb5c04;
+  background: transparent;
+  border: 2px solid;
   text-decoration: none;
   padding: 10px 25px;
   border-radius: 20px;
@@ -154,9 +177,20 @@ header.abajo ul li a {
 }
 
 .inicio .contenido a:hover {
-  color: #f6a70b;
   background: transparent;
-  border: 2px solid #bb5c04;
+  border: 2px solid;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--white),
+    var(--brown),
+    var(--brown),
+    var(--white)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 /* Mascota Flotante */
@@ -220,11 +254,19 @@ header.abajo ul li a {
 }
 
 .tituloCategoria h2 {
-  color: #e9ff6d;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 2.5em;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--white),
+    var(--white),
+    var(--yellow)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .categoria .tienda .card .magico {
@@ -307,11 +349,19 @@ header.abajo ul li a {
 }
 
 .tituloUbicacion h2 {
-  color: #e9ff6d;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 2em;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 2.5em;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--white),
+    var(--white),
+    var(--yellow)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 /* Footer */

@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --yellow: rgb(255, 243, 106);
+  --white: rgb(255, 255, 255);
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 6;
+
+}
+
+header.abajo {
+  background: #fcfcec;
+  padding: 40px 100px;
+  height: 0%;
+  width: 90%;
+}
+
+header .logo img {
+  max-width: 100px;
+  min-width: 100px;
+  align-items: flex-start;
+  color: #ffafcc;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+  color: #bb5c04;
+}
+
+/* Seccion curvo */
+
+.div-curvo {
+  position: relative;
+  background: #bde0fe;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.div-curvo svg {
+  display: flex;
+  justify-content: center;
+}
+
+.div-curvo h1 {
+  font-size: 6rem;
+  margin-top: 10rem;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--white),
+    var(--white),
+    var(--yellow)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+
+/* Tienda */
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+h1 .magico {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  font-size: 3rem;
+}
+
+.tienda {
+  padding-top: 100px;
+  margin: 0 5rem 0rem 5rem;
+  font-size: 1rem;
+  display: grid;
+  gap: 5px 10px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.productos article {
+  position: relative;
+  width: 350px;
+  transition: all .3s ease;
+}
+
+.productos article img:first-child{
+  box-shadow: 0 60px 60px -60px rgba(255, 179, 0, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.productos article img:last-child{
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.productos article:hover {
+  transform: 
+  perspective(250px)
+  rotateX(10deg)
+  translateY(-5%)
+  translateZ(0);
+}
+
+.productos article::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: 
+  linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0) 95%
+  );
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.productos article:hover::before {
+  opacity: 1;
+}
+
+.productos article:hover img:last-child{
+  opacity: 1;
+}
