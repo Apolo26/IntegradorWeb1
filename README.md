@@ -34,6 +34,12 @@ En la seccion "Contacto" se le agregó "Preguntas Frecuentes"
 Tambien se le arregló el problema de linkeos mencionados en el anterior changelog.
 Aun no contiene formulario de contacto                                                              ☑
 
+26/06/2023
+
+Se le agregó una nueva seccion "Tienda" mostrando unas cards con un efecto "3d".
+Se le hicieron cambios esteticos a los titulos y parrafos de la pagina principal.
+
+
 ## ⚒️ Actualmente la pagina sigue en construccion ⚒️
 ## Captura
 
