@@ -41,6 +41,9 @@ Se le hicieron cambios esteticos a los titulos y parrafos de la pagina principal
 
 
 ## ⚒️ Actualmente la pagina sigue en construccion ⚒️
-## Captura
+## Captura(25/04/2023)
 
 ![App Screenshot](https://i.ibb.co/8MczFR4/image.png)
+
+## Captura(26/06/2023)
+![App Screenshot](https://i.ibb.co/qRdt3Zz/Captura-de-pantalla-2023-04-26-161217.png)
