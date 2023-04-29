@@ -39,7 +39,6 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 6;
-
 }
 
 header.abajo {
@@ -53,7 +52,6 @@ header .logo img {
   max-width: 100px;
   min-width: 100px;
   align-items: flex-start;
-  color: #ffafcc;
 }
 
 /* Navbar */
@@ -81,7 +79,7 @@ header ul li a {
   margin: 0 15px;
   text-decoration: none;
   color: #fff;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   transition: 0.3s;
 }
