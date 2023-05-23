@@ -59,7 +59,7 @@ Hacé click en el siguiente [link](https://www.figma.com/file/fjsR9jZ1fci1xNxtR3
 
 ![App Screenshot](https://i.ibb.co/8MczFR4/image.png)
 
-## Captura(26/06/2023)
+## Captura(26/04/2023)
 ![App Screenshot](https://i.ibb.co/qRdt3Zz/Captura-de-pantalla-2023-04-26-161217.png)
 
 
