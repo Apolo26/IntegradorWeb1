@@ -41,20 +41,24 @@ Hacé click en el siguiente [link](https://www.figma.com/file/fjsR9jZ1fci1xNxtR3
 
 25/04/2023
 
-> En la seccion "Contacto" se le agregó "Preguntas Frecuentes"
-> Tambien se le arregló el problema de linkeos mencionados en el anterior changelog.
+> En la seccion "Contacto" se le agregó "Preguntas Frecuentes" <br>
+> Tambien se le arregló el problema de linkeos mencionados en el anterior changelog. <br>
 > Aun no contiene formulario de contacto                                                              ☑
 
 26/04/2023
 
-> Se le agregó una nueva seccion "Tienda" mostrando unas cards con un efecto "3d".
+> Se le agregó una nueva seccion "Tienda" mostrando unas cards con un efecto "3d". <br>
 > Se le hicieron cambios esteticos a los titulos y parrafos de la pagina principal.
 
 
 22/05/2023
 > Se le agrego el formulario de contacto en la seccion "Contacto" con las validaciones requeridas en JS.
 
-## ⚒️ Actualmente la pagina sigue en construccion ⚒️
+30/05/2023
+> Se arregló el formulario, antes estaba con alertas y ahora crea elementos en el form. <br>
+> Se optimizo las imagenes un 90%. <br>
+> Se le agregó modal en politicas de privacidad y en la imagen en la seccion "conocenos"
+
 ## Captura(25/04/2023)
 
 ![App Screenshot](https://i.ibb.co/8MczFR4/image.png)
