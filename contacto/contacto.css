@@ -326,3 +326,16 @@ button:hover {
   background-color: #6780b6;
   cursor: pointer;
 }
+
+#errores,
+#resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}

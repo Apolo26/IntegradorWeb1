@@ -28,6 +28,8 @@ contenidoAcordeon.forEach((item, index) => {
   });
 });
 
+//funcion cerrar ojito
+
 function removerAbierto(index1) {
   contenidoAcordeon.forEach((item2, index2) => {
     if (index1 != index2) {
@@ -40,75 +42,121 @@ function removerAbierto(index1) {
   });
 }
 
-
 //Validacion de formulario
-
 
 const formulario = document.getElementById("formulario");
 const nombreInput = document.getElementById("nombre");
 const emailInput = document.getElementById("email");
 const telefonoInput = document.getElementById("telefono");
 const mensajeInput = document.getElementById("mensaje");
+const erroresDiv = document.getElementById("errores");
+const resultadoDiv = document.getElementById("resultado");
 
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
 
   if (validarCampos()) {
-
-    console.log("Formulario válido");
+    mostrarResultado();
   }
 });
 
+// validaciones
+
 function validarCampos() {
+  erroresDiv.innerHTML = "";
+
   const nombre = nombreInput.value.trim();
   const email = emailInput.value.trim();
   const telefono = telefonoInput.value.trim();
   const mensaje = mensajeInput.value.trim();
+  let camposValidos = true;
+
+  //nombre
 
   if (nombre === "") {
-    alert("Por favor, ingresa tu nombre.");
+    crearMensajeError("Por favor, ingresa tu nombre.");
     nombreInput.focus();
-    return false;
+    camposValidos = false;
+  } else if (nombre.length > 30) {
+    crearMensajeError("El nombre debe tener máximo 30 caracteres.");
+    nombreInput.focus();
+    camposValidos = false;
   }
+
+  //email
 
   if (email === "") {
-    alert("Por favor, ingresa tu dirección de correo electrónico.");
+    crearMensajeError("Por favor, ingresa tu dirección de correo electrónico.");
     emailInput.focus();
-    return false;
+    camposValidos = false;
+  } else if (!validarEmail(email)) {
+    crearMensajeError(
+      "Por favor, ingresa una dirección de correo electrónico válida."
+    );
+    emailInput.focus();
+    camposValidos = false;
   }
 
-  if (!validarEmail(email)) {
-    alert("Por favor, ingresa una dirección de correo electrónico válida.");
-    emailInput.focus();
-    return false;
-  }
+  //telefono
 
   if (telefono === "") {
-    alert("Por favor, ingresa tu número de teléfono.");
+    crearMensajeError("Por favor, ingresa tu número de teléfono.");
     telefonoInput.focus();
-    return false;
+    camposValidos = false;
+  } else if (!validarTelefono(telefono)) {
+    crearMensajeError("Por favor, ingresa un número de teléfono válido.");
+    telefonoInput.focus();
+    camposValidos = false;
   }
+
+  //mensaje
 
   if (mensaje === "") {
-    alert("Por favor, ingresa tu mensaje.");
+    crearMensajeError("Por favor, ingresa tu mensaje.");
     mensajeInput.focus();
-    return false;
+    camposValidos = false;
+  } else if (mensaje.length > 200) {
+    crearMensajeError("El mensaje debe tener máximo 200 caracteres.");
+    mensajeInput.focus();
+    camposValidos = false;
+    console.warn("This is a warning");
   }
 
-  return true;
+  return camposValidos;
 }
+
+//funciones
 
 function validarEmail(email) {
   const regex = /^\S+@\S+\.\S+$/;
   return regex.test(email);
 }
 
-telefonoInput.addEventListener("input", function (event) {
-  let telefono = telefonoInput.value;
+function validarTelefono(telefono) {
+  const regex = /^\d+$/;
+  return regex.test(telefono);
+}
 
-  telefono = telefono.replace(/\D/g, "");
+function crearMensajeError(mensaje) {
+  const errorP = document.createElement("p");
+  errorP.textContent = mensaje;
+  errorP.classList.add("error");
+  erroresDiv.appendChild(errorP);
+}
 
-  telefono = telefono.slice(0, 10);
+function mostrarResultado() {
+  const nombre = nombreInput.value.trim();
+  const email = emailInput.value.trim();
+  const telefono = telefonoInput.value.trim();
+  const mensaje = mensajeInput.value.trim();
 
-  telefonoInput.value = telefono;
-});
+  const resultadoTexto = `Nombre: ${nombre}<br>
+    Email: ${email}<br>
+    Teléfono: ${telefono}<br>
+    Mensaje: ${mensaje}`;
+
+  resultadoDiv.innerHTML = resultadoTexto;
+
+  console.info("Se validó el formulario.");
+  formulario.reset();
+}

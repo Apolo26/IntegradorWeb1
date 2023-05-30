@@ -143,8 +143,46 @@ header.abajo ul li a {
 }
 
 .conocenos img {
-  width: 80%;
+  width: 50%;
+  height: 50%;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 10%;
+  width: 100%;
   height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-contenido {
+  padding-top: 50px;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  max-height: 80vh;
+}
+
+.cerrar {
+  color: #bb5c04;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .conocenos .mascota {
