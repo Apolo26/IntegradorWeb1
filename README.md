@@ -9,7 +9,7 @@
 
 La página web es para la heladería con temática espacial "**Planeta Helado**".
 
-El sitio web está compuesto por cuatro secciones principales: galería, tienda, conócenos y contacto.
+El sitio web está compuesto por cinco secciones principales: inicio, galería, tienda, conócenos y contacto.
 
 La sección de inicio es la página principal de la página web y presenta una animación de un helado flotante llamado Astro, que es la mascota de la heladería. Además, se muestran algunos productos de la heladería en esta sección y un mapa de la ubicación.
 
