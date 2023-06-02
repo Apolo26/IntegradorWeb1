@@ -37,7 +37,7 @@ Hacé click en el siguiente [link](https://www.figma.com/file/fjsR9jZ1fci1xNxtR3
 
 24/04/2023 
 
-> La sección "CONTACTO" tiene problemas de linkeos y la página no es completamente responsiva.        ☑
+> La sección "CONTACTO" tiene problemas de linkeos.        ☑
 
 25/04/2023
 
