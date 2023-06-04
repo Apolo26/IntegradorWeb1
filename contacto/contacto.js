@@ -119,7 +119,6 @@ function validarCampos() {
     crearMensajeError("El mensaje debe tener máximo 200 caracteres.");
     mensajeInput.focus();
     camposValidos = false;
-    console.warn("This is a warning");
   }
 
   return camposValidos;
