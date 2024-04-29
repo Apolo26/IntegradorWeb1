@@ -109,7 +109,7 @@ header.abajo ul li a {
 
 .div-curvo {
   position: relative;
-  background: #bde0fe;
+  background: #78bcf7;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -152,7 +152,7 @@ header.abajo ul li a {
 
 
 .fotos {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .fotos p {
@@ -182,7 +182,7 @@ h2{
 
 .container {
   margin: auto;
-  width: 50%;
+  width: 40%;
   position: relative;
 }
 

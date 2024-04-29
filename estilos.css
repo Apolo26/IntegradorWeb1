@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #bde0fe;
+  background-color: #78bcf7;
   overflow-x: hidden;
 }
 
@@ -111,7 +111,7 @@ header.abajo ul li a {
 .inicio {
   position: relative;
   max-width: 630px;
-  height: 30vh;
+  height: 20vh;
   z-index: 2;
 }
 
@@ -203,9 +203,9 @@ header.abajo ul li a {
 
 .imgBx img {
   position: relative;
-  right: -800px;
+  right: -1000px;
   top: -100px;
-  width: 700px;
+  width: 850px;
   animation: animate 5s linear infinite;
 }
 
@@ -239,7 +239,7 @@ header.abajo ul li a {
 .inicio .bgColor:nth-child(2) {
   background: #fffd6d;
   top: -200px;
-  right: -900px;
+  right: -1200px;
   width: 400px;
   height: 400px;
   border-radius: 50%;
